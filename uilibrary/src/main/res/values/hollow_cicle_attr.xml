@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Hollow_Circle">
+        <attr name="broder_color" format="color|reference" />
+        <attr name="broder_width" format="dimension"/>
+    </declare-styleable>
+
+</resources>
