@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.lyc.ui.baseui.MainActivity">
+    tools:context="com.lyc.ui.baseui.CircleActivity"
+    android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="circle"
-        android:text="自定义圆"/>
+    <com.lyc.ui.uilibrary.circle.HollowCircleView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:broder_color="@android:color/darker_gray"
+        app:broder_width="1px"/>
 
 </LinearLayout>

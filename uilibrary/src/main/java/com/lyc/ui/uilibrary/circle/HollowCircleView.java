@@ -54,12 +54,15 @@ public class HollowCircleView extends View {
         mCircleHollowPanit.setStyle(Paint.Style.STROKE);
         mCircleHollowPanit.setStrokeWidth(mCircleHollowWidth);
         mCircleHollowPanit.setColor(mCircleHollowColor);
+
+        mRectF=new RectF();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.clipRect(mRectF);
+
         canvas.drawCircle(mWight / 2, mHeight / 2, mRadius, mCircleHollowPanit);
     }
 
